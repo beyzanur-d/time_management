@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ajanda ve Görevler</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <a href="index.html">🗓️ Ana Sayfa</a>
+    <a href="pomodoro.html">🕒 Pomodoro</a>
+  </div>
+
+  <div class="container">
+    <h1>📋 Seçilen Gün için Görevler</h1>
+    <p id="selected-date">Seçilen Tarih: Gün Seçilmedi</p>
+
+    <!-- Takvim -->
+    <div id="calendar"></div>
+
+    <!-- Tüm Görevleri Göster Butonu -->
+    <button id="toggle-tasks" onclick="toggleShowAllTasks()">Tüm Görevleri Göster</button>
+    <h2>Görev Ekle</h2>
+    <input type="text" id="task-input" placeholder="Görev Adı">
+    <input type="date" id="task-date">
+    <input type="time" id="task-time">
+    <button onclick="addTask()">Ekle</button>
+
+    <h2>📝 Görev Tablosu</h2>
+    <table class="styled-table">
+      <thead>
+        <tr>
+          <th>Görev</th>
+          <th>Tarih</th>
+          <th>Saat</th>
+          <th>Durum</th>
+          <th>Sil</th>
+        </tr>
+      </thead>
+      <tbody id="task-table"></tbody>
+    </table>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+  <script src="server.js"></script>
+  <script src="tasks.js"></script>
+</body>
+</html>

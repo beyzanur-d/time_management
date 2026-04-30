@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kişisel Zaman Yönetimi</title>
+    <link rel="stylesheet" href="style_pomodoro.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="index.html">🗓️ Ana Sayfa</a>
+        <a href="pomodoro.html">🕒 Pomodoro</a>
+    </div>
+  
+    <div class="container">
+        <h1>🕒 Pomodoro Zamanı</h1>
+        
+        <!-- Zamanlayıcı Ekranı -->
+        <div class="timer">
+            <span id="minutes">25</span>:<span id="seconds">00</span>
+        </div>
+
+        <!-- Kontrol Butonları -->
+        <div class="buttons">
+            <button id="start">Başlat</button>
+            <button id="stop">Durdur</button>
+            <button id="reset">Sıfırla</button>
+        </div>
+
+        <!-- Mod Seçenekleri -->
+        <div class="time-modes">
+            <button id="pomodoro" class="mode-btn">25-5 Pomodoro</button>
+            <button id="long-pomodoro" class="mode-btn">50-10 Uzun Pomodoro</button>
+        </div>
+
+        <!-- Özel Zaman Ayarı -->
+        <div class="custom-time">
+            <input type="number" id="custom-minutes" placeholder="Dakika girin" min="1">
+            <button id="set-custom-time">✅ Ayarla</button>
+        </div>
+        
+        <p id="message"></p>
+    </div>
+    <script src="pomodoro.js"></script>
+</body>
+</html>

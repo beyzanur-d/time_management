@@ -1,0 +1,126 @@
+/* Genel Stil */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #b8d4ec, #457d80);
+    color: #333;
+  }
+  /* Navbar */
+  /* Navbar Stilleri */
+  .navbar {
+    position: fixed; /* Sabit konum için */
+    top: 0; /* Sayfanın en üstüne yerleştir */
+    left: 0;
+    width: 100%; /* Tüm genişliği kapla */
+    display: flex;
+    justify-content: center;
+    background-color: #457d80;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Üstte görünmesi için */
+  }
+
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 0 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+
+  .navbar a:hover {
+    color: #ff6b6b;
+    transform: scale(1.1);
+  }
+
+/* Navbar'ın altındaki içerik için boşluk bırak */
+body {
+  padding-top: 70px; /* Navbar yüksekliği kadar boşluk bırak */
+}  
+  
+  /* Konteyner */
+  .container {
+    margin: 2rem auto;
+    padding: 2rem;
+    width: 80%;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+  
+  /* Takvim */
+  #calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+  }
+  
+  #calendar div {
+    background-color: #64949d;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+  #calendar div:hover {
+    background-color: #4facfe;
+  }
+  
+  #calendar div.selected {
+    background-color: #ff6b6b; /* Seçili gün rengi */
+  }
+  
+  /* Tablo */
+  .styled-table {
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .styled-table th,
+  .styled-table td {
+    padding: .75rem;
+  }
+  
+  .styled-table th {
+     text-transform:bold
+  }
+  
+  /* Buton Stilleri */
+  button {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    margin: 0.5rem;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #e74c3c;
+    transform: scale(1.1);
+  }
+
+  .mode-btn {
+    background-color: #79a4b1;
+  }
+
+  .mode-btn:hover {
+    background-color: #64949d;
+  }
